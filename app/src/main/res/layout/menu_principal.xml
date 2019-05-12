@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fondo3"
+    android:orientation="vertical"
+    android:weightSum="7"
+    tools:context="com.app.cristian.rerumbeta.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EVENTOS"
+            style="@style/button_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <!--WeightSum es el peso de los elementos-->
+        <Button
+            android:id="@+id/btnespectaculo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/blue_button"
+            style="@style/button_text"
+            android:text="Espectaculos"
+
+            android:drawableTop="@drawable/icons8_movie_projector_64" />
+        <!--android:layout_weight="x" es para distribuir el peso-->
+        <Button
+            android:id="@+id/btndescubrir"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/blue_button"
+            style="@style/button_text"
+            android:text="Descubrir"
+            android:drawableTop="@drawable/icons8_binoculars_64" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btninfantil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/blue_button"
+            style="@style/button_text"
+            android:text="Para los mas chicos"
+            android:drawableTop="@drawable/icons8_user_group_man_man_64" />
+
+        <Button
+            android:id="@+id/btntalleres"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/blue_button"
+            style="@style/button_text"
+            android:text="Talleres"
+            android:drawableTop="@drawable/icons8_work_64" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btnaire"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/icons8_partly_cloudy_day_64"
+            android:layout_marginRight="10dp"
+            android:text="Al aire libre"
+            android:layout_weight="2"
+            android:background="@drawable/blue_button"
+            style="@style/button_text" />
+        <Button
+            android:id="@+id/btncomida"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/icons8_restaurant_64"
+            android:layout_weight="2"
+            android:text="Comer rico"
+            android:background="@drawable/blue_button"
+            style="@style/button_text"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/fondo3">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/TituloDB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comidas Ricas"
+                style="@style/texto"/>
+
+            <ImageView
+                android:id="@+id/CartelDB"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:id="@+id/ResumenDB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Venga con su familia a disfrutar de este hermozo"
+                style="@style/texto"/>
+            <TextView
+                android:id="@+id/DescripcionDB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.47"
+                android:text="Patio de comidas del barrio"
+                style="@style/texto"/>
+
+            <Button
+                android:id="@+id/eliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:background="@drawable/blue_button"
+                style="@style/button_text"
+                android:text="Eliminar" />
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>
